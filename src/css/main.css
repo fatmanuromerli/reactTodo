@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-image: url("todoGelistirilmis/todo.png");
+    background-size: 100px;
+} */
+/*
+
+h4{
+    color: ;
+} */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#fato {
+
+    /* color: #487683 */
+    color: #1F3250;
+}
+
+span {
+    /* color: #B7C29F; */
+    color: #D2624C;
+}
+
+#navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 100px;
+
+
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    border-radius: 4px;
+    background-color: rgb(227, 231, 124);
+    padding: 0.75rem;
+
+}
+
+#navbar ul li a {
+    padding: 0.75rem;
+    color: #336ea2;
+}
+
+#navbar ul li a:hover {
+    background-color: #336ea2;
+    border-radius: 4px;
+    color: rgb(227, 231, 124);
+}
+
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Resmin kesilmesini engelleyerek sayfayı kaplaması */
+    z-index: -1;
+    /* Resmin arka planda kalması */
+}
+
+#home .name,
+#home a {
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    height: 50%;
+    width: 50%;
+    /* background: rgba(241, 243, 181, 0.812); */
+    opacity: 0.9;
+}
+
+
+html {
+    font-family: "Open Sans", "sans-serif";
+}
+
+/*!! cutsom buttonlar bootstrap butonlarını düzenlemek için yazıldı */
+.custom-button1 {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #D2624C !important;
+    background-color: #1F3250 !important;
+    margin: 2px;
+}
+
+.custom-button1:hover {
+    background-color: #D2624C;
+    color: #1F3250;
+}
+
+.custom-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #D2624C;
+    color: #1F3250;
+    margin: 2px;
+}
+
+.custom-button2:hover {
+    color: #D2624C;
+    background-color: #1F3250;
+}
+
+.custom-button3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #D2624C;
+    color: #1F3250;
+    font-weight: bold;
+    margin: 2px;
+
+}
+
+.custom-button3:hover {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #D2624C;
+    background-color: #1F3250;
+}
+
+.custom-button {
+    width: 50px;
+    height: 40px;
+    color: #D2624C;
+    background-color: #1D3051;
+}
+
+.custom-button:hover {
+    background-color: #D2624C;
+    color: #1F2F48;
+}
+
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+/* ul li.checked::before{
+    text-decoration: none;
+
+} */
+
+ul li {
+    cursor: pointer;
+    /* Kullanıcıya tıklanabilir olduğunu gösterir */
+}
+
+/*text*/
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+}
+
+.heading-medium {
+    font-size: 1.5rem;
+}
+
+.heading-big {
+    font-size: 1.75rem;
+}
+
+
+/* color */
+.bg-dark-blue {
+    /* background-color: #062e51; */
+    background-color: #111230;
+}
+
+.bg-light-blue {
+    background-color: #336ea2;
+}
+
+/* container */
+
+.containerr {
+    max-width: 200px;
+    margin: 0 auto;
+
+}
+
+.list-group-item .d-flex {
+    margin-left: auto;
+}
+
+.list-group-item .btn {
+    margin-right: 5px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #888;
+    /* İsteğe bağlı: üstü çizili öğenin rengini soluk yapabilirsiniz */
+}
+
+#container {
+    width: 100%;
+    /* Genişlik tam olsun */
+    max-height: 500px;
+    /* Kapsayıcının yüksekliğini sınırla */
+    overflow: hidden;
+    /* Fazla içeriği gizle */
+}
+
+#ul1 {
+    list-style: none;
+    /* Liste işaretçilerini kaldır */
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+    /* Liste için maksimum yükseklik */
+    overflow-y: auto;
+    /* Yalnızca dikey scroll bar ekle */
+    scroll-behavior: smooth;
+}
+
+.list-group-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Görev öğelerini ayırmak için bir sınır */
+}
+
+/* Add custom overlay scroll */
+.overlay-scroll {
+    max-height: 400px;
+    /* Adjust the height as needed */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.2);
+    /* Firefox */
+}
+
+/* For webkit browsers (Chrome, Safari, etc.) */
+.overlay-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.overlay-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.overlay-scroll::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.todo-list {
+    max-height: 400px;
+    /* Maksimum yükseklik */
+    overflow-y: auto;
+    /* Yalnızca dikeyde kaydırma */
+    margin-bottom: 20px;
+    /* Alt boşluk */
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
